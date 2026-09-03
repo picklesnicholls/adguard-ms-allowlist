@@ -1,14 +1,15 @@
 # Notes 📒  
 
-The below is a general usage guide for AdGuard Home (AGH).
+The below is a general usage guide for AdGuard Home (AGH).  
+**NOTE!** This is based on my experience. The below is not associated with the AGH team in any way. 
 Please assess what is best for your own network and needs.
 
 ## Requirements ✅  
 
 - AdGuard Home v0.107.72 or later recommended
 - Run it on a device that is always on (Pi, NAS, mini PC)
-- If you are familiar with Containers, install AGH in those
-- Only ONE DHCP/DNS server on the network — disable the DNS
+- If you are familiar with Containers, install AGH in one of those
+- Only ONE DHCP/DNS server on the network. Disable the DNS
   service on your router if running AGH on a separate device,
   or point the router's DHCP DNS setting at the AGH machine
 
@@ -43,10 +44,7 @@ Needed to resolve the hostname of your encrypted upstreams.
 ## DNS server configuration ⚙  
 
 - Enable DNSSEC: yes (verify upstream supports it)
-- "Block ECH"? personal choice. Enabling it restores
-  SNI-based filtering visibility
 - Cache size: 4 MB+ is fine for most homes
-- "Serve stale" (if available): helps resilience
 
 ## Encryption (optional but recommended) 🔒  
 
@@ -97,24 +95,20 @@ Filters > Blocked services:
 Settings > DNS settings > "Disallowed domains":
 - Paste TLDs/domains you never need to see (e.g. ssl.google-analytics.com)
   to silence query-log spam
-- Alternatively raise log retention (Settings > General settings)
 - Daily habit for the first week: Query Log, filter "Blocked",
   unblock anything legitimate that got caught. This is how you
-  build YOUR allowlist, not someone else's
+  build YOUR allowlist
 
 ## Clients 👥  
 
 - Per-client settings let you give kids' devices stricter
   filtering than your work laptop
-- Enable "Parental control" services or schedule-based access
-  under the client's settings
 - Fixed IPs + DHCP reservations make client rules reliable
 
 ## Testing & troubleshooting 🔍  
 
 - Command-line check: nslookup doubleclick.net <AGH-ip>
   should return 0.0.0.0 (blocked); a normal site should resolve
-- Check "Settings > DNS settings" → "DNS rewrites" if you self-host
 - If something breaks, FIRST check the Query Log before blaming
   the app. Filter by the domain or "Blocked" status
 - Safe-mode test: disconnect AGH from DNS duties temporarily;
