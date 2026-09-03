@@ -38,16 +38,16 @@ for everything else.
 https://raw.githubusercontent.com/picklesnicholls/adguard-ms-allowlist/refs/heads/main/ms-allowlist.txt
 
 
-2. In AdGuard Home, go to **Filters → DNS allowlists → Add filter**.
+2. In AdGuard Home, go to **Filters → DNS allowlists → Add allowlist**.
 3. Paste the URL, give it a name (e.g. "Microsoft Services"), and save.
-4. Optionally force an update on the new filter to pull it immediately.
+4. Optionally **Check for updates** to pull it immediately.
 
 ### ⚠️ Syntax note — read this
 
-This file is written for **allowlist filters only** (rules like `||domain^`).
+This file is written for **DNS allowlists** filters only (rules like `||domain^`).
 Do **not** paste these rules into **Custom filtering rules** — that location
 expects *exception* rules, which look like `@@||domain^` instead (RegEx). 
-If you copy the raw file and paste directly into **Custom Filtering Rules**
+If you copy the raw file and paste directly into **Custom filtering rules**
 those filter rules won't do anything.
 
 ## Telemetry disclaimer
@@ -55,9 +55,9 @@ those filter rules won't do anything.
 Some entries (`events.data.microsoft.com`, `aria.microsoft.com`, and a few
 others) are Microsoft diagnostic/telemetry endpoints. They are included because
 some Office features behave oddly without them. **If you'd rather keep
-telemetry blocked, you will need to copy this list and add the items to **Custom Filtering Rules** and simply delete those lines. Teams and Office work fine
-without them for most users. The sections are commented so you can identify
-them easily.
+telemetry blocked, you will need to copy this list and add the items to **Custom filtering rules**
+and simply delete those lines. Teams and Office work fine without them for most users.
+The sections are commented so you can identify them easily.
 
 ## Why Apple & Google domains?
 
