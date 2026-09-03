@@ -54,7 +54,7 @@ those filter rules won't do anything.
 
 Some entries (`events.data.microsoft.com`, `aria.microsoft.com`, and a few
 others) are Microsoft diagnostic/telemetry endpoints. They are included in a separate 
-allow list because some Office features can behave oddly without them. Please copy the below raw URL for that list file:
+allow list because some Office features can behave oddly without them. Please copy the below raw URL list file, if you wish to whitelist these too:
 
 https://raw.githubusercontent.com/picklesnicholls/adguard-ms-allowlist/refs/heads/main/ms-allowlist-telemetry.txt
 
