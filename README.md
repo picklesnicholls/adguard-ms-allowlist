@@ -3,14 +3,14 @@
 A curated DNS allowlist for [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)
 that prevents filtering from breaking Microsoft business services:
 
-🏢 Teams
-📧 Outlook
-☁️ Azure
-🧑‍💻 Azure DevOps
-🫙 OneDrive
-🌐 SharePoint
-♻️ Intune
-📲 Microsoft Authenticator and friends.
+🏢 Teams  
+📧 Outlook  
+☁️ Azure  
+🧑‍💻 Azure DevOps  
+🫙 OneDrive  
+🌐 SharePoint  
+♻️ Intune  
+📲 Microsoft Authenticator and friends  
 
 If you run aggressive blocklists at home (especially if you work from home), you've
 probably noticed Microsoft 365 login loops, Teams calls failing, or Authenticator
