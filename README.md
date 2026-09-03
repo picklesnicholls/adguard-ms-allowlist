@@ -53,11 +53,11 @@ those filter rules won't do anything.
 ## Telemetry disclaimer
 
 Some entries (`events.data.microsoft.com`, `aria.microsoft.com`, and a few
-others) are Microsoft diagnostic/telemetry endpoints. They are included because
-some Office features behave oddly without them. **If you'd rather keep
-telemetry blocked, you will need to copy this list and add the items to **Custom filtering rules**
-and simply delete those lines. Teams and Office work fine without them for most users.
-The sections are commented so you can identify them easily.
+others) are Microsoft diagnostic/telemetry endpoints. They are included in a separate 
+allow list because some Office features can behave oddly without them. Please copy the below RAW URL for that list file:
+
+https://raw.githubusercontent.com/picklesnicholls/adguard-ms-allowlist/refs/heads/main/ms-allowlist-telemetry.txt
+
 
 ## Why Apple & Google domains?
 
