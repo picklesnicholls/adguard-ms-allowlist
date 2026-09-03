@@ -46,7 +46,7 @@ https://raw.githubusercontent.com/picklesnicholls/adguard-ms-allowlist/refs/head
 
 This file is written for **DNS allowlists** filters only (rules like `||domain^`).
 Do **not** paste these rules into **Custom filtering rules** — that location
-expects *exception* rules, which look like `@@||domain^` instead (RegEx). 
+expects *exception* rules, which look like `@@||domain^` instead. 
 If you copy the raw file and paste directly into **Custom filtering rules**
 those filter rules won't do anything.
 
