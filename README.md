@@ -35,7 +35,7 @@ for everything else.
 
 1. Copy the raw URL for the list file:
 
-https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/ms-allowlist.txt
+https://raw.githubusercontent.com/picklesnicholls/adguard-ms-allowlist/refs/heads/main/ms-allowlist.txt
 
 
 2. In AdGuard Home, go to **Filters → DNS allowlist → Add filter**.
