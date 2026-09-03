@@ -1,4 +1,4 @@
-# AdGuard Home — Microsoft Services Allowlist
+# AdGuard Home - Microsoft Services Allowlist
 
 A curated DNS allowlist for [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)
 that prevents filtering from breaking Microsoft business services:
@@ -42,7 +42,7 @@ https://raw.githubusercontent.com/picklesnicholls/adguard-ms-allowlist/refs/head
 3. Paste the URL, give it a name (e.g. "Microsoft Services"), and save.
 4. Optionally **Check for updates** to pull it immediately.
 
-### ⚠️ Syntax note — read this
+### ⚠️ Syntax note - read this
 
 This file is written for **DNS allowlists** filters only (rules like `||domain^`).
 Do **not** paste these rules into **Custom filtering rules** — that location
@@ -86,4 +86,4 @@ Issues and PRs welcome. When reporting a domain, please include:
 
 ## License
 
-MIT — see LICENSE file. Provided as-is, with no guarantee of completeness.
+GNU GENERAL PUBLIC LICENSE — see LICENSE file. Provided as-is, with no guarantee of completeness.
