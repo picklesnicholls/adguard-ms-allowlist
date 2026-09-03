@@ -86,4 +86,4 @@ Issues and PRs welcome. When reporting a domain, please include:
 
 ## License
 
-GNU GENERAL PUBLIC LICENSE — see LICENSE file. Provided as-is, with no guarantee of completeness.
+GNU GENERAL PUBLIC LICENSE - see LICENSE.md file. Provided as-is, with no guarantee of completeness.
