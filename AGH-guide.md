@@ -24,16 +24,16 @@ Please assess what is best for your own network and needs.
 
 Choose providers that suit your priorities (speed vs filtering vs privacy):
 - Quad9: tls://dns.quad9.net        (malware blocking, DNSSEC)
-- Cloudflare: https://security.cloudflare-dns.com/dns-query
-- Cloudflare Family: https://family.cloudflare-dns.com/dns-query
-  (malware + adult content blocking)
-Run a benchmark tool for your location if unsure (e.g. GRC's
+- Cloudflare: https://security.cloudflare-dns.com/dns-query  
+- Don't use filtering services in your upstream servers (Cloudflare
+for Families for example). Configure this filtering via AGH filters
+and blocked services  
+- Run a benchmark tool for your location if unsure (e.g. GRC's
 Domain Name Speed Benchmark). Fastest on paper isn't always
-fastest for you!
-
-Parallel vs fastest address: AGH can query several upstreams in
-parallel ("Load balancing" / "Fastest address"). Usually leave
-the default unless you have a reason.
+fastest for you  
+- Parallel vs Fastest IP address: AGH can query several upstreams in
+parallel ("Load balancing" / "Fastest address"). I find Paralell 
+requests is the best option.
 
 ## Bootstrap DNS servers 🥾  
 
