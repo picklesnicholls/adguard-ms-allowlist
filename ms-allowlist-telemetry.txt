@@ -1,8 +1,15 @@
-
+! Title: AdGuard Home — Microsoft Services Allowlist (Telemetry)
+! Description: Microsoft telemetry. Most MS services generally
+!     still function without these, but if you are having issues
+!     you can add this list to your *DNS allowlists* filters
+! Homepage: https://github.com/picklesnicholls/adguard-ms-allowlist/
+! Licence: GNU GENERAL PUBLIC LICENSE
+! Last updated: 2026-09-03
 !
-! --- Telemetry (OPTIONAL — delete these lines if you prefer
-!     to keep Microsoft telemetry blocked; services generally
-!     still function without them) ---
+! NOTE: This list is for AdGuard Home *DNS allowlist* filters
+! (Filters -> DNS allowlists). Do NOT paste into Custom filtering rules —
+! those expect exception syntax (@@||domain^) instead.
+!
+! --- Telemetry ---
 ||events.data.microsoft.com^
 ||aria.microsoft.com^
-!
