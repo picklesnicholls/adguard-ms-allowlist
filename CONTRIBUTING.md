@@ -4,7 +4,7 @@
 - One rule per line, `||domain^` format (this list targets AdGuard Home
   *allowlist filters*, not custom filtering rules).
 - Group it under the relevant comment section, or create one if none fits.
-- Make sure it's genuinely required for a service to function — not just
+- Make sure it's genuinely required for a service to function, not just
   cosmetic (analytics for analytics' sake belong in a separate optional file).
 
 ## Reporting an issue
