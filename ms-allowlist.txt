@@ -1,1 +1,117 @@
-
+! Title: AdGuard Home — Microsoft Services Allowlist
+! Description: Prevents DNS filtering from breaking Microsoft business
+!   services: Teams, Outlook, Azure, Azure DevOps, Intune, Authenticator,
+!   OneDrive, Power Platform. Includes mobile push endpoints (APNs/FCM).
+! Homepage: https://github.com/YOUR_USERNAME/YOUR_REPO
+! Licence: MIT
+! Last updated: 2026-09-03
+!
+! NOTE: This list is for AdGuard Home DNS *allowlist filters*
+! (Filters -> DNS allowlist). Do NOT paste into Custom filtering rules —
+! those expect exception syntax (@@||domain^) instead.
+!
+! --- Authentication & identity ---
+||login.microsoftonline.com^
+||login.microsoft.com^
+||login.windows.net^
+||login.live.com^
+||aadcdn.microsoftonline-p.com^
+||secure.aadcdn.microsoftonline-p.com^
+||sts.windows.net^
+||msftauth.net^
+||msftauthimages.net^
+||msidentity.com^
+||aadg.msidentity.com^
+||mobileappcommunicator.auth.microsoft.com^
+||account.microsoft.com^
+||my.microsoftpersonalcontent.com^
+||microsoftonline-p.com^
+!
+! --- Core Microsoft infrastructure / CDNs ---
+||msecnd.net^
+||msocdn.com^
+||msedge.net^
+!
+! --- Teams ---
+||teams.microsoft.com^
+||teams.cdn.office.net^
+||teams.events.data.microsoft.com^
+!
+! --- Office / Microsoft 365 ---
+||office.com^
+||office.net^
+||office365.com^
+||officeapps.live.com^
+||svc.ms^
+!
+! --- Outlook / Exchange ---
+||outlook.office.com^
+||outlook.office365.com^
+||outlook.com^
+!
+! --- OneDrive & SharePoint ---
+||sharepoint.com^
+||sharepointonline.com^
+||onedrive.live.com^
+||1drv.com^
+!
+! --- Azure & Azure DevOps ---
+||azure.com^
+||azure.microsoft.com^
+||azurewebsites.net^
+||azureedge.net^
+||blob.core.windows.net^
+||core.windows.net^
+||cloudapp.azure.com^
+||dev.azure.com^
+||visualstudio.com^
+||vscode.dev^
+!
+! --- Admin portals ---
+||portal.azure.com^
+||admin.microsoft.com^
+||portal.office.com^
+||portal.cloudappsecurity.com^
+!
+! --- Intune / Endpoint management ---
+||manage.microsoft.com^
+||enterpriseenrollment.microsoft.com^
+||dm.microsoft.com^
+||dm-apis.microsoft.com^
+!
+! --- Windows Update & Defender ---
+||windowsupdate.com^
+||update.microsoft.com^
+||delivery.mp.microsoft.com^
+||do.dsp.mp.microsoft.com^
+||smartscreen-prod.microsoft.com^
+||defender.microsoft.com^
+||security.microsoft.com^
+||protection.office.com^
+!
+! --- Power Platform ---
+||powerapps.com^
+||powerautomate.com^
+||flow.microsoft.com^
+||azure-apim.net^
+||api.powerplatform.com^
+!
+! --- Telemetry (OPTIONAL — delete these lines if you prefer
+!     to keep Microsoft telemetry blocked; services generally
+!     still function without them) ---
+||events.data.microsoft.com^
+||aria.microsoft.com^
+!
+! --- Mobile push: Apple APNs (required by Teams/Authenticator
+!     notifications on iOS) ---
+||push.apple.com^
+||apns.aaplimg.com^
+!
+! --- Mobile push: Google FCM (required by Teams/Authenticator
+!     notifications on Android) ---
+||firebaseinstallations.googleapis.com^
+||mtalk.google.com^
+||android.apis.google.com^
+||app-measurement.com^
+||crashlytics.com^
+||firebase-settings.crashlytics.com^
