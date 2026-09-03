@@ -1,7 +1,7 @@
 ! Title: AdGuard Home — Microsoft Services Allowlist
 ! Description: Prevents DNS filtering from breaking Microsoft business
-!   services: Teams, Outlook, Azure, Azure DevOps, Intune, Authenticator,
-!   OneDrive, Power Platform. Includes mobile push endpoints (APNs/FCM).
+! services: Teams, Outlook, Azure, Azure DevOps, Intune, Authenticator,
+! OneDrive, Power Platform. Includes mobile push endpoints (APNs/FCM).
 ! Homepage: https://github.com/picklesnicholls/adguard-ms-allowlist/
 ! Licence: GNU GENERAL PUBLIC LICENSE
 ! Last updated: 2026-09-03
