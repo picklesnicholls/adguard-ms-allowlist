@@ -5,7 +5,7 @@
   *allowlist filters*, not custom filtering rules).
 - Group it under the relevant comment section, or create one if none fits.
 - Make sure it's genuinely required for a service to function, not just
-  cosmetic (analytics for analytics' sake belong in a separate optional file).
+  cosmetic.
 
 ## Reporting an issue
 Include the full hostname from your Query Log, the affected app, and your
