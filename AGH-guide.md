@@ -1,8 +1,10 @@
-Notes 📒
+Notes 📒  
+
 The below is a general usage guide for AdGuard Home (AGH).
 Please assess what is best for your own network and needs.
 
-Requirements ✅
+Requirements ✅  
+
 - AdGuard Home v0.107.72 or later recommended
 - Run it on a device that is always on (Pi, NAS, mini PC)
 - If you are familiar with Containers, install AGH in those
