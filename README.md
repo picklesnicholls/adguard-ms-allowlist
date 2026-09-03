@@ -38,7 +38,7 @@ for everything else.
 https://raw.githubusercontent.com/picklesnicholls/adguard-ms-allowlist/refs/heads/main/ms-allowlist.txt
 
 
-2. In AdGuard Home, go to **Filters → DNS allowlist → Add filter**.
+2. In AdGuard Home, go to **Filters → DNS allowlists → Add filter**.
 3. Paste the URL, give it a name (e.g. "Microsoft Services"), and save.
 4. Optionally force an update on the new filter to pull it immediately.
 
@@ -46,15 +46,16 @@ https://raw.githubusercontent.com/picklesnicholls/adguard-ms-allowlist/refs/head
 
 This file is written for **allowlist filters only** (rules like `||domain^`).
 Do **not** paste these rules into **Custom filtering rules** — that location
-expects *exception* rules, which look like `@@||domain^` instead. If you mix
-them up, the rules won't do anything.
+expects *exception* rules, which look like `@@||domain^` instead (RegEx). 
+If you copy the raw file and paste directly into **Custom Filtering Rules**
+those filter rules won't do anything.
 
 ## Telemetry disclaimer
 
 Some entries (`events.data.microsoft.com`, `aria.microsoft.com`, and a few
 others) are Microsoft diagnostic/telemetry endpoints. They are included because
 some Office features behave oddly without them. **If you'd rather keep
-telemetry blocked, simply delete those lines** — Teams and Office work fine
+telemetry blocked, you will need to copy this list and add the items to **Custom Filtering Rules** and simply delete those lines. Teams and Office work fine
 without them for most users. The sections are commented so you can identify
 them easily.
 
@@ -73,8 +74,8 @@ Microsoft migrates endpoints over time (increasingly towards `.microsoft` and
 
 1. Open your AdGuard Home **Query Log**, filter for *Blocked*, and look for
    domains containing `microsoft`, `azure`, `office`, `msidentity`, etc.
-2. Add the domain to the list (or temporarily unblock it via the Query Log).
-3. Please open an issue here with the domain so everyone benefits!
+2. Temporarily unblock it via the Query Log.
+3. Please open an issue here with the domain so I can update the master list. Everyone benefits!
 
 ## Contributing
 
@@ -85,4 +86,4 @@ Issues and PRs welcome. When reporting a domain, please include:
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Provided as-is, with no guarantee of completeness.
+MIT — see LICENSE file. Provided as-is, with no guarantee of completeness.
