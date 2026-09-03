@@ -89,7 +89,7 @@ Filters > Blocked services:
 - Easiest way to block entire services (TikTok, etc.)
 - Block all, then toggle OFF services you legitimately use
 - Careful: blocking Microsoft or Google services here WILL break
-  business tooling regardless of your allowlists — the blocked
+  business tooling regardless of your allowlists. The blocked
   services feature works separately from DNS blocklists
 
 ## Query log hygiene 🧹  
@@ -99,7 +99,7 @@ Settings > DNS settings > "Disallowed domains":
   to silence query-log spam
 - Alternatively raise log retention (Settings > General settings)
 - Daily habit for the first week: Query Log, filter "Blocked",
-  unblock anything legitimate that got caught — this is how you
+  unblock anything legitimate that got caught. This is how you
   build YOUR allowlist, not someone else's
 
 ## Clients 👥  
