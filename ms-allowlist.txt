@@ -2,12 +2,12 @@
 ! Description: Prevents DNS filtering from breaking Microsoft business
 !   services: Teams, Outlook, Azure, Azure DevOps, Intune, Authenticator,
 !   OneDrive, Power Platform. Includes mobile push endpoints (APNs/FCM).
-! Homepage: https://github.com/YOUR_USERNAME/YOUR_REPO
-! Licence: MIT
+! Homepage: https://github.com/picklesnicholls/adguard-ms-allowlist/
+! Licence: GNU GENERAL PUBLIC LICENSE
 ! Last updated: 2026-09-03
 !
 ! NOTE: This list is for AdGuard Home DNS *allowlist filters*
-! (Filters -> DNS allowlist). Do NOT paste into Custom filtering rules —
+! (Filters -> DNS allowlists). Do NOT paste into Custom filtering rules —
 ! those expect exception syntax (@@||domain^) instead.
 !
 ! --- Authentication & identity ---
